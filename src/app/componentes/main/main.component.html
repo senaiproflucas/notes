@@ -1,0 +1,6 @@
+<button routerLink="/criar-nota">Criar Nota</button>
+<p>SEM NOTAS AINDA =(</p>
+
+<div *ngFor="let nota of listaNotas">
+    <app-nota [nota]="nota"></app-nota>
+</div>
