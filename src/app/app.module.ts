@@ -7,6 +7,7 @@ import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component'
 import { MainComponent } from './componentes/main/main.component';
 import { NotaComponent } from './componentes/nota/nota.component';
 import { CriarNotaComponent } from './componentes/criar-nota/criar-nota.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CriarNotaComponent } from './componentes/criar-nota/criar-nota.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
