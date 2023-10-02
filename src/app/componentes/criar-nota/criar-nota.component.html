@@ -1,5 +1,9 @@
-<input type="text">Titulo
-<input type="text">Conteudo
+<input 
+    type="text"
+    [(ngModel)]="nota.titulo"
+>Título
+
+<input type="text" [(ngModel)]="nota.conteudo">Conteudo
 
 <select name="tipo" id="tipo">
     <option value="tipo1">Azul</option>
@@ -7,6 +11,6 @@
     <option value="tipo3">Lilás</option>
 </select>
 
-<button>Criar Nota</button>
+<button (click)="criarNota()">Criar Nota</button>
 <button routerLink="/home">Cancelar</button>
 
