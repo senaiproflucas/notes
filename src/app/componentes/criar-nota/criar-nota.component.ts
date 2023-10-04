@@ -23,8 +23,12 @@ export class CriarNotaComponent {
 
   criarNota(){
     this.service.criar(this.nota).subscribe(() => {
-      this.router.navigate(['/main'])
+      this.router.navigate(['/home'])
     })
+  }
+
+  cancelar(){
+    this.router.navigate(['/home'])
   }
 
 }

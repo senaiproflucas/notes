@@ -9,6 +9,7 @@ import { NotaComponent } from './componentes/nota/nota.component';
 import { CriarNotaComponent } from './componentes/criar-nota/criar-nota.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ExcluirNotaComponent } from './componentes/excluir-nota/excluir-nota.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     CabecalhoComponent,
     MainComponent,
     NotaComponent,
-    CriarNotaComponent
+    CriarNotaComponent,
+    ExcluirNotaComponent
   ],
   imports: [
     BrowserModule,
